@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Todo List App</title>
+</head>
+<body>
+    <div class="wrapper ">
+        <div class="screen-backdrop"></div>
+        <div class="screen screen-home">
+            <!-- head-wrapper -->
+            <div class="head-wrapper">
+                <div class="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+                    </svg>
+                </div>
+                <div class="welcome">
+                    <div class="content">
+                        <h2>Welcome to your diary</h2>
+                        <p class="num-task">Today You Have <span class="total-tasks-number"></span> Tasks</p>
+                    </div>
+                    <div class="img">
+                        <div class="backdrop"></div>
+                        <img src="images/boy.png">
+                    </div>
+                </div>
+            </div>
+            <!-- categories-wrapper -->
+            <div class="categories-wrapper">
+                <div class="categories"></div>
+            </div>
+        </div>
+        <div class="screen category-screen">
+            <div class="head-wrapper">
+                <div class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"></path>
+                    </svg>
+                </div>
+                <div class="options">
+                    <div class="toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="category-details">
+                <img src="images/boy.png" alt="" id="category-img"/>
+                <div class="details">
+                    <p class="num-tasks"></p>
+                    <h1 class="category-title">Personal</h1>
+                </div>
+            </div>
+            <div class="tasks-wrapper">
+                <div class="tasks">
+                </div>
+            </div>
+        </div>
+        <div class="add-task-btn">
+            <svg  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+        </div>
+        <div class="black-backdrop"></div>
+        <div class="add-task">
+            <div class="add-task-backdrop"></div>
+            <h1 class="heading">Add Task</h1>
+            <div class="input-group">
+                <label for="task-input">Task</label>
+                <input type="text" id="task-input" required />
+            </div>
+            <div class="input-group">
+                <label for="category-select">Category</label>
+                <select name="" id="category-select">
+                </select>
+            </div>
+            <div class="btns">
+                <button class="cancel-btn">Cancel</button>
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
